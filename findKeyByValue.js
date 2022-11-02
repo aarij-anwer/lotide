@@ -10,17 +10,11 @@ const findKeyByValue = function(obj, value) {
   let keys = Object.keys(obj);
   let answer;
   
-  keys.forEach(element => {
-    /*console.log(`element: ${element}`);
-    console.log(`obj[element]: ${obj[element]}`);
-    console.log(`value: ${value}`);*/
-
+  for (const element of keys) {
     if (obj[element] === value) {
-      //console.log("Here!");
-      answer = element;
+      return element;
     }
-  });
-
+  }
   return answer;
 };
 
