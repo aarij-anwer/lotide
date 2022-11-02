@@ -28,9 +28,9 @@ const eqObjects = function(object1, object2) {
 
   if (keys1.length === keys2.length) {
     for (const element of keys1) {
-      console.log(`key: ${element}`);
-      console.log(`value object1: ${object1[element]}`);
-      console.log(`value object2: ${object2[element]}`);
+      //console.log(`key: ${element}`);
+      //console.log(`value object1: ${object1[element]}`);
+      //console.log(`value object2: ${object2[element]}`);
 
       if (object1[element] instanceof Array && object2[element] instanceof Array) {
         //do something
@@ -46,8 +46,9 @@ const eqObjects = function(object1, object2) {
       }
     }
     return true;
+  } else {
+    return false;
   }
-  return false;
 };
 
 let ab = { a: "1", b: "2" };
