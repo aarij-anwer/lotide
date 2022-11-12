@@ -1,12 +1,16 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-let t = tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-console.log(t);
+describe("#tail", () => {
+  it("returns 3 for length for [\"Yo Yo\", \"Lighthouse\", \"Labs\"] after the function call, showing argument array was not modified", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    let t = tail(words);
+    assert.strictEqual(words.length, 3);
+  });
 
-const words2 = ["Yo Yo"];
-t = tail(words2);
-assertEqual(words2.length, 1); // original array should still have 1 element!
-console.log(t);
+  it("returns [\"Lighthouse\", \"Labs\"] for after tail function is called on [\"Yo Yo\", \"Lighthouse\", \"Labs\"]", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    let t = tail(words);
+    assert.deepEqual(t,["Lighthouse", "Labs"]);
+  });
+});
