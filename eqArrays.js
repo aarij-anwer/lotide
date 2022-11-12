@@ -4,7 +4,11 @@ const eqArrays = function(array1, array2) {
       return false;
     }
   }
-  return true;
+  if (array1.length === array2.length) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 module.exports = eqArrays;
