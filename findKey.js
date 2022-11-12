@@ -48,3 +48,5 @@ const test3 = findKey({
 }, x => x.stars > 3); // => undefined
 
 assertEqual(test3, undefined);
+
+module.exports = findKey;

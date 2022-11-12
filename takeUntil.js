@@ -53,3 +53,4 @@ assertArraysEqual(results3, [1, 2, 5, 7, 2, 2, 4, 5]);
 assertArraysEqual(results4, []);
 
 
+module.exports = takeUntil;

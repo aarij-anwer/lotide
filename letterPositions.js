@@ -48,3 +48,5 @@ answer = {
 };
 
 console.log(answer);
+
+module.exports = letterPositions;

@@ -40,3 +40,4 @@ words = [];
 results1 = map(words, word => word[0]);
 assertArraysEqual(results1,[]);
 
+module.exports = map;

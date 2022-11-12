@@ -24,6 +24,8 @@ const countLetters = function(phrase) {
   return answer;
 };
 
+module.exports = countLetters;
+
 console.log(countLetters("lighthouse in the house"));
 const answer = {
   l: 1,
