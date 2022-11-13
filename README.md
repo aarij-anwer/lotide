@@ -26,7 +26,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `head(array)`: returns `array[0]`
+* `head(array)`: returns `array[0]` as the head
 * `tail(array)`: returns all itmes after the head of `array` as an array
 * `middle(array)`: returns the middle of `array` (one item if odd, two items if even, none if `array.length <=2`)
 * `assertArraysEqual(actual, expected)`: assert function checking if arrays `actual` === `expected`
