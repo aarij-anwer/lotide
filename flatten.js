@@ -1,3 +1,4 @@
+//takes `array` with other arrays inside and returns a single-level array
 const flatten = function(array) {
   let answer = [];
   array.forEach(element => {

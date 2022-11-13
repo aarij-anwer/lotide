@@ -1,5 +1,6 @@
-const assertArraysEqual = require('./assertArraysEqual');
+//const assertArraysEqual = require('./assertArraysEqual');
 
+//returns a subset `array1`, removing from it the elements from `array2`.
 const without = function(array1, array2) {
   let answer = [];
   for (let i = 0; i < array1.length; i++) {
@@ -18,7 +19,7 @@ console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 console.log(without(["1", "2", "3"], [1, 2, "4"])); // => ["1", "2", "3"]
 console.log(without(["1", "2", "3"], ["1", "2", "3"])); // => ["1", "2", "3"]
 console.log(without(["1", 2, "3"], ["1", "2", "3"])); // => ["1", "2", "3"]
-*/
+
 
 const words = ["hello", "world", "lighthouse"];
 const wo = without(words, ["lighthouse"]);
@@ -27,6 +28,6 @@ const wo = without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 // Make sure without is working
 assertArraysEqual(wo, ["hello", "world"]);
-
+*/
 
 module.exports = without;

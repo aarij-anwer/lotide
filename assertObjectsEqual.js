@@ -1,6 +1,6 @@
 const eqObjects = require('./eqObjects');
 
-// FUNCTION IMPLEMENTATION
+//assert function checking if objects `actual` and `expected` are exactly equal, doesn't return only prints to console.log
 const assertObjectsEqual = function(actual, expected) {
   // Implement me!
   const inspect = require('util').inspect;
@@ -12,35 +12,3 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 module.exports = assertObjectsEqual;
-/*
-let ob1 = { a: '1', b: 2 };
-let ob2 = { b: 2, a: '1' };
-assertObjectsEqual(ob1, ob2);
-
-ob1 = { a: '1', b: '2' };
-ob2 = { b: 2, a: '1' };
-assertObjectsEqual(ob1, ob2);
-
-ob1 = { a: '1', b: 2, c: '3' };
-ob2 = { b: 2, a: '1' };
-assertObjectsEqual(ob1, ob2);
-
-ob1 = "1";
-ob2 = "1";
-assertObjectsEqual(ob1, ob2);
-
-ob1 = "1";
-ob2 = 1;
-assertObjectsEqual(ob1, ob2);
-
-ob1 = [1];
-ob2 = [1];
-assertObjectsEqual(ob1, ob2);
-
-ob1 = [1];
-ob2 = ["1"];
-assertObjectsEqual(ob1, ob2);
-
-ob1 = [1, 2];
-ob2 = [1];
-assertObjectsEqual(ob1, ob2);*/

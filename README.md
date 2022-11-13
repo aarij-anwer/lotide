@@ -29,9 +29,9 @@ The following functions are currently implemented:
 * `head(array)`: returns `array[0]` as the head
 * `tail(array)`: returns all itmes after the head of `array` as an array
 * `middle(array)`: returns the middle of `array` (one item if odd, two items if even, none if `array.length <=2`)
-* `assertArraysEqual(actual, expected)`: assert function checking if arrays `actual` === `expected`
-* `assertEqual(actual, expected)`: assert function checking if primitive data types `actual` === `expected`
-* `assertObjectsEqual(actual, expected)`: assert function checking if objects `actual` === `expected`
+* `assertArraysEqual(actual, expected)`: assert function checking if arrays `actual` === `expected`, doesn't return only prints to console.log
+* `assertEqual(actual, expected)`: assert function checking if primitive data types `actual` === `expected`, doesn't return only prints to console.log
+* `assertObjectsEqual(actual, expected)`: assert function checking if objects `actual` === `expected`, doesn't return only prints to console.log
 * `countLetters(phrase)`: return an object that enumerates each letter of the string `phrase`
 * `countOnly(allItems, itemsToCount)`: given an array `allItems` and an object `itemsToCount`, it will return an object containing counts of everything that the input object listed.
 * `eqArrays(array1, array2)`: returns true if `array1` and `array2` have the exact same contents and same length

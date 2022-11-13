@@ -1,3 +1,4 @@
+//returns the middle of `array` (one item if odd, two items if even, none if `array.length <=2`)
 const middle = function(array) {
   let answer = [];
   if (array.length < 3) {

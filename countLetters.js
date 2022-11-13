@@ -1,11 +1,13 @@
+//return an object that enumerates each letter of the string `phrase`
 const countLetters = function(phrase) {
 
   let answer = {};
 
   for (const element of phrase) {
-    //do something
     if (element !== ' ') {
+      //ignoring blanks
       if (answer.hasOwnProperty(element)) {
+        //increment if already counted
         answer[element]++;
       } else {
         answer[element] = 1;
