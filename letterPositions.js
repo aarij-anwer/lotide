@@ -17,6 +17,7 @@ const letterPositions = function(sentence) {
   return answer;
 };
 
+/*
 console.log(letterPositions("lighthouse in the house"));
 let answer = {
   l: [0],
@@ -47,6 +48,6 @@ answer = {
   n: [12]
 };
 
-console.log(answer);
+console.log(answer);*/
 
 module.exports = letterPositions;

@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@aarijanwer/lotide",
   "version": "1.0.0",
-  "description": "lotide for LHL",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library",
   "main": "assertEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/aarij-anwer/lotide.git"
   },
-  "author": "Aarij Anwer",
+  "author": "Aarij Anwer <aarij.anwer@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aarij-anwer/lotide/issues"

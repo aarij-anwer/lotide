@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const findKey = function(object, callback) {
   let keys = Object.keys(object);
 
@@ -5,14 +7,6 @@ const findKey = function(object, callback) {
     if (callback(object[keys[i]])) {
       return keys[i];
     }
-  }
-};
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
